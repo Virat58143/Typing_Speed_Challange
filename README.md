@@ -1,40 +1,56 @@
-
 # Typing Speed Challenge – Test Your Typing Skills 📝⌨️
-# Link:-https://virat58143.github.io/Typing_Speed_Challange/
 
-**Typing Speed Challenge** ek interactive web application hai jo users ko unki typing speed aur accuracy check karne ka mauka deta hai. Users ko ek paragraph ya line di jaati hai jise type karna hota hai, aur application real-time me unki typing speed (Words Per Minute - WPM) aur accuracy (%) calculate karta hai. Ye project **HTML, CSS, aur JavaScript** ka use karke banaya gaya hai aur iska design fully responsive hai, matlab ye desktop, tablet aur mobile par easily use kiya ja sakta hai. Ye project un logon ke liye perfect hai jo apni typing skills improve karna chahte hain ya ek fun typing challenge enjoy karna chahte hain.  
+**Project Link:** (https://virat58143.github.io/Typing_Speed_Challange/)
+
+**Typing Speed Challenge** is an interactive web application that allows users to test their typing speed and accuracy. Users are given a paragraph or line to type, and the application calculates their typing speed (Words Per Minute - WPM) and accuracy (%) in real-time. This project is built using **HTML, CSS, JavaScript and React.js** and features a fully responsive design, making it accessible on desktop, tablet, and mobile devices. It is perfect for users who want to improve their typing skills or enjoy a fun typing challenge.  
 
 ## 🔹 Key Features
 
 ### Typing Test
 - Real-time typing speed calculation (WPM)  
 - Accuracy calculation (%)  
-- Dynamic text display for typing test  
-- Easy-to-use **Start**, **Reset**, aur **Clear** buttons  
+- Dynamic text display for the typing test  
+- Easy-to-use **Start**, **Reset**, and **Clear** buttons  
 
 ### User-Friendly Design
-- Responsive layout for mobile, tablet, aur desktop  
-- Clean aur simple interface for better user experience  
-- Smooth transitions aur visual feedback while typing  
+- Responsive layout for mobile, tablet, and desktop  
+- Clean and simple interface for better user experience  
+- Smooth transitions and visual feedback while typing  
 
 ### Interactive Feedback
 - Highlights typing mistakes  
-- Shows live updates of speed aur accuracy  
+- Shows live updates of speed and accuracy  
 - Encourages users to improve typing performance  
 
-# React + Vite
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔹 Project Setup – React + Vite
 
-Currently, two official plugins are available:
+This project uses **React** with **Vite** for a minimal and fast development setup with Hot Module Replacement (HMR) and ESLint integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Available Plugins
+- **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react)** – Uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) with rollup-vite) for Fast Refresh  
+- **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc)** – Uses [SWC](https://swc.rs/) for Fast Refresh  
 
-## React Compiler
+### React Compiler
+The React Compiler is not enabled by default in this template due to its impact on development and build performance. To enable it, refer to [React Compiler documentation](https://react.dev/learn/react-compiler/installation).  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Expanding ESLint Configuration
+For production applications, it is recommended to use **TypeScript** with type-aware lint rules enabled. See the [TypeScript template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on integrating TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔹 Technologies Used
+- **HTML5** – Structure of the web pages  
+- **CSS3** – Styling and responsive layouts  
+- **JavaScript (ES6+)** – Typing logic, speed calculation, and interactivity  
+- **React.js** – Component-based UI for a scalable and fast interface  
+
+---
+
+## 🔹 How to Use / Run Locally
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Virat58143/Typing_Speed_Challange.git
