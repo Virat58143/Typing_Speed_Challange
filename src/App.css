@@ -1,0 +1,230 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ====== BODY ====== */
+body {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #000);
+  min-height: 100vh;
+}
+
+/* ====== APP ====== */
+.app {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  color: #fff;
+  animation: fadeIn 1.2s ease;
+}
+
+/* ====== HEADING ====== */
+.app h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00f5ff, #00ff87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowText 2s infinite alternate;
+}
+
+/* ====== TIME SELECT ====== */
+.time-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  animation: slideDown 0.8s ease;
+}
+
+.time-select label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.time-select select {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #111;
+  color: #00ffcc;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+}
+
+/* ====== PANEL ====== */
+.panel {
+  display: flex;
+  gap: 25px;
+  animation: fadeUp 1s ease;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    flex-direction: column;
+  }
+}
+
+/* ====== BOX ====== */
+.box {
+  flex: 2;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  animation: pulseBox 3s infinite alternate;
+}
+
+/* ====== PARAGRAPH ====== */
+.paragraph {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+/* ====== TYPING COLORS ====== */
+.correct {
+  color: #00ff87;
+  text-shadow: 0 0 6px rgba(0, 255, 135, 0.8);
+  animation: pop 0.15s ease;
+}
+
+.wrong {
+  color: #ff4d4d;
+  background: rgba(255, 0, 0, 0.15);
+  border-radius: 3px;
+  animation: shake 0.25s ease;
+}
+
+/* ====== INPUT ====== */
+.box input {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #0b0b0b;
+  color: #fff;
+  box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.box input::placeholder {
+  color: #888;
+}
+
+/* ====== STATS ====== */
+.stats {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  animation: slideRight 1s ease;
+}
+
+.stats p {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+}
+
+/* ====== PASS / FAIL ====== */
+.pass {
+  color: #00ff87;
+  font-size: 1.4rem;
+  font-weight: bold;
+  animation: winGlow 1.5s infinite alternate;
+}
+
+.fail {
+  color: #ff4d4d;
+  font-size: 1.4rem;
+  font-weight: bold;
+  animation: failShake 0.8s infinite;
+}
+
+/* ====== BUTTON ====== */
+.stats button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #00f5ff, #00ff87);
+  color: #000;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stats button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes glowText {
+  from { text-shadow: 0 0 10px #00f5ff; }
+  to { text-shadow: 0 0 25px #00ff87; }
+}
+
+@keyframes pulseBox {
+  from { box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); }
+  to { box-shadow: 0 0 35px rgba(0, 255, 255, 0.5); }
+}
+
+@keyframes pop {
+  from { transform: scale(1.2); }
+  to { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes winGlow {
+  from { text-shadow: 0 0 10px #00ff87; }
+  to { text-shadow: 0 0 25px #00ff87; }
+}
+
+@keyframes failShake {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
