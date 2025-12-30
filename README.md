@@ -10,7 +10,7 @@
 - Real-time typing speed calculation (WPM)  
 - Accuracy calculation (%)  
 - Dynamic text display for the typing test  
-- Easy-to-use **Start**, **Reset**, and **Clear** buttons  
+- Easy-to-use **Start** buttons  
 
 ### User-Friendly Design
 - Responsive layout for mobile, tablet, and desktop  
